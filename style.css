@@ -70,6 +70,7 @@ ul{
 
 .main-nav{
     justify-content: space-between;
+    position: relative;
 }
 .nav-links{
     flex-basis: 880px;
@@ -78,6 +79,9 @@ ul{
 .nav-links ul{
     justify-content: end;
     gap: 40px;
+}
+.nav-toggle{
+    display: none;
 }
 .primary-button{
     border: 0.5px solid var(--secondary-text-color);
@@ -105,6 +109,3 @@ ul{
     background-color: var(--accent-color-dark);
 }
 
-@media screen and (max-width:991px){
-    
-}
