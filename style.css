@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    color: var(--primary-text-color);
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1680px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+
+}
+.logo-img{
+    width: 50px;
+    height: 50px;
+}
+.logo-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-left: 4px;
+    /* margin-right: 30px; */
+}
+.top-banner{
+    background-color: #2E8A99;
+   
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.hover-links{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+
+}
+.hover-links:hover{
+    color: var(--accent-color);
+}
+
+.main-nav{
+    justify-content: space-between;
+    position: relative;
+}
+.nav-links{
+    flex-basis: 880px;
+
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+.nav-toggle{
+    display: none;
+}
+.primary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.primary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+
+}
+.secondary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
